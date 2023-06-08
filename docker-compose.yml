@@ -30,7 +30,7 @@ services:
       - ./sample_data:/sample_data
 
   airflow:
-    build: .
+    build: docker_air_dbt
     restart: always
     environment:
       DBT_PROFILES_DIR: /dbt
